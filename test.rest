@@ -1,0 +1,14 @@
+GET https://api.openweathermap.org/data/2.5/weather?q=Delhi&APPID=33ba6a50df2537ca158f0524def69053&units=metric
+
+###
+POST http://localhost:9000/employees
+Content-Type: application/json
+
+{
+"employeeName": "John",
+"employeeId": 112211,
+"dateOfBirth": "27-02-1990",
+"phone": 9986386140,
+"designation": "Engineer",
+"address": "Bangalore"
+}
