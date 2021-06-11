@@ -4,6 +4,10 @@ const router = express.Router()
 const Employee = require('../models/employee')
 
 
+//External API call happens here 
+
+//Open chrome browser and type localhost:3000/employees
+
 router.get('/', async (req, res) => {
     try {
         let employees = await axios.get('https://jsonplaceholder.typicode.com/todos')
