@@ -1,16 +1,16 @@
 const express = require('express')
-const mongoose = require('mongoose')
+//const mongoose = require('mongoose')
 const cors = require('cors')
-const url = 'mongodb://localhost/EmployeeDB'
+//const url = 'mongodb://localhost/EmployeeDB'
 
 const app = express()
 
-mongoose.connect(url, {useNewUrlParser:true})
-const con = mongoose.connection
+// mongoose.connect(url, {useNewUrlParser:true})
+// const con = mongoose.connection
 
-con.on('open', () => {
-    console.log('connected...')
-})
+// con.on('open', () => {
+//     console.log('connected...')
+// })
 
 app.use(express.json())
 
